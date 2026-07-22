@@ -1,0 +1,6 @@
+interface:
+  display_name: "YABI"
+  short_description: "Elite complete-site design system"
+  default_prompt: "Use $yabi to design and build a complete web experience with route architecture, art direction, motion, and final audit."
+policy:
+  allow_implicit_invocation: true

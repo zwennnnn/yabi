@@ -1,0 +1,11 @@
+{
+  "name": "yabi-skill-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic helper scripts for the yabi complete-site design skill.",
+  "scripts": {
+    "brief": "node scripts/yabi-brief.js",
+    "static-audit": "node scripts/yabi-static-audit.js",
+    "refs": "node scripts/yabi-reference-index.js"
+  }
+}

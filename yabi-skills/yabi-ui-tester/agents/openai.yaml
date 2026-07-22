@@ -1,0 +1,6 @@
+interface:
+  display_name: "YABI UI Tester"
+  short_description: "Playwright visual audit for YABI sites"
+  default_prompt: "Use $yabi-ui-tester to audit this website across routes, viewports, screenshots, console logs, network errors, accessibility, and YABI UI rules."
+policy:
+  allow_implicit_invocation: true

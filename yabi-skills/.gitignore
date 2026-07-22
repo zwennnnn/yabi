@@ -1,0 +1,5 @@
+node_modules/
+yabi-ui-tester/yabi-test-results/
+yabi/yabi-static-audit/
+*.log
+.DS_Store
