@@ -8,6 +8,19 @@ Use $yabi. Bana sadece landing değil, komple bir web sitesi tasarla ve inşa et
 fiziğini ve component mimarisini çıkar. Sonra homepage, kritik iç sayfalar,
 navigation, footer, CTA, form durumları, responsive davranış ve final audit ile
 üret. Kart grid, generic icon, gradient ve sıradan hero kalıbı kullanma.
+Kullanıcı gerçek marka/app adı vermediyse uydurma isim üretme. Her section
+entrance, iç motion, exit transition ve micro-interaction seviyesinde full
+animasyon alsın.
+```
+
+## React Landing Üç Prompt Base
+
+```text
+Use $yabi. React landing işi için references/tr/react-landing-base.md dosyasını
+santim santim uygula: önce skill araştırması + React mimari planlama, sonra
+olağandışılık zorunlu üretim, sonra denetim ve inceltme. Henüz onay vermediysem
+yalnızca ilk promptta dur. Uydurma app adı yasak. Her section full animasyonlu
+olacak.
 ```
 
 ## Refactor Prompt'u

@@ -1,5 +1,7 @@
 node_modules/
 yabi-ui-tester/yabi-test-results/
 yabi/yabi-static-audit/
+yabi-motion-contract/
+*/yabi-motion-contract/
 *.log
 .DS_Store

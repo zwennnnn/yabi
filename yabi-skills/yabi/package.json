@@ -5,6 +5,7 @@
   "description": "Deterministic helper scripts for the yabi complete-site design skill.",
   "scripts": {
     "brief": "node scripts/yabi-brief.js",
+    "motion-contract": "node scripts/yabi-motion-contract.js",
     "static-audit": "node scripts/yabi-static-audit.js",
     "refs": "node scripts/yabi-reference-index.js"
   }

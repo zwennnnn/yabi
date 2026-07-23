@@ -35,7 +35,7 @@ Duruma göre ek oku:
 
 ## Zorunlu Fazlar
 
-### Faz -1: Skill Araştırması ve React Mimari Planı
+### Faz -1: Skill Araştırması, İsim Disiplini ve React Mimari Planı
 
 React landing page, homepage, single-page campaign, hero/section redesign veya
 mevcut landing refactor görevlerinde koda geçmeden önce bu faz zorunludur.
@@ -52,6 +52,11 @@ ile araştır. Üç kategori tara:
 Her bulunan ilgili skill için adını, kategorisini ve işe yaradığı alanı özetle;
 projeye kur; sonra `SKILL.md`/`README` dosyalarını oku. Skill okumadan kod
 yazma.
+
+Uygulamaya veya markaya uydurma, komik, jenerik startup ismi verme. Kullanıcı
+ad verdiyse birebir kullan. Ad vermediyse plan fazında isim istemeyi tercih et;
+devam etmek gerekiyorsa geçici olarak sektör/ürün kategorisini literal başlık
+olarak kullan.
 
 Bu fazın sonunda kullanıcıya React mimari planını özetle ve onay iste. Kullanıcı
 açıkça "planlama", "1. prompt" veya "henüz oluşturma" diyorsa burada dur.
@@ -102,6 +107,10 @@ Siteyi gerçek ürün gibi inşa et:
   section component sınırlarını koru, motion'u custom hook'lara koy,
   GSAP context cleanup'ı `ctx.revert()` ile yap, inline stil ve sabit hex
   gömme.
+- Her section full animasyon alır: giriş, section içi scroll/motion davranışı,
+  çıkış veya komşu section geçişi ve varsa hover/focus micro-interaction.
+  Statik section yasaktır; bilinçli sessizlik bile planlanmış bir motion
+  karşıtlığı olarak belgelenir.
 
 ### Faz 3: Kırma ve Sertleştirme
 
@@ -131,12 +140,18 @@ mimari plan, sonra olağandışılık zorunlu üretim, sonra denetim ve inceltme
   araştırması, React mimari planı, olağandışılık seçimi, sick transitions,
   görsel tedarik, okunabilirlik denetimi ve refactor içerik koruması her
   zaman uygulanır.
+- Uydurma marka/app isimleri yasaktır: "Nexa", "Lumina", "Flowly", "Pulse",
+  "Nova", "Vibe", "Quantum" gibi brief'ten doğmayan isimler üretme. İsim yoksa
+  kullanıcıdan iste veya literal kategori adıyla geçici devam et.
 
 ## Yardımcı Scriptler
 
 Bu skill birkaç deterministik yardımcı script içerir:
 
 - `scripts/yabi-brief.js`: yeni proje için site brief şablonu üretir.
+- `scripts/yabi-motion-contract.js`: React section klasörlerinde motion hook,
+  CSS ve animation izlerini denetler; full-section animation kuralını kontrol
+  eder.
 - `scripts/yabi-static-audit.js`: kaynak kodda yasaklı pattern ve zayıf UI
   izlerini tarar.
 - `scripts/yabi-reference-index.js`: skill referanslarını ve frontmatter

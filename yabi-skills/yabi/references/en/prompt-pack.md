@@ -7,7 +7,20 @@ Use $yabi. Design and build a complete website, not only a landing page. First
 define the route map, content spine, visual-world premise, motion physics, and
 component architecture. Then produce the homepage, key inner pages, navigation,
 footer, CTAs, form states, responsive behavior, and final audit. Do not use card
-grids, generic icons, gradients, or a predictable hero template.
+grids, generic icons, gradients, or a predictable hero template. Do not invent a
+fake app/brand name when the user has not provided one. Every section must have
+full animation: entrance, internal motion, exit transition, and
+micro-interaction.
+```
+
+## React Landing Three-Prompt Base
+
+```text
+Use $yabi. For this React landing page, follow references/en/react-landing-base.md
+exactly: first skill research + React architecture planning, then unusualness-led
+implementation, then audit and refinement. If I have not approved the plan yet,
+stop after prompt one. Fake app names are forbidden. Every section must have
+full animation.
 ```
 
 ## Refactor Prompt

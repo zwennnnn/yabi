@@ -60,6 +60,12 @@ const rules = [
     pattern: /\b(fade[-_ ]?in|slide[-_ ]?up|animate[-_ ]?in)\b/i,
     message: 'Generic reveal naming detected; inspect motion quality.',
   },
+  {
+    id: 'fake-startup-name',
+    severity: 'medium',
+    pattern: /\b(nexa|nova|lumina|vibe|pulse|flowly|quantum|aether|orbit|vertex|synergy|catalyst|elevate|prism)\b/i,
+    message: 'Potential fake startup/app name detected; use user-provided or literal brief-derived naming.',
+  },
 ];
 
 function walk(dir) {

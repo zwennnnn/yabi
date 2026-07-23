@@ -9,7 +9,20 @@ Use $yabi. Bana sadece landing değil, komple bir web sitesi tasarla ve inşa et
 Rota haritası, bilgi mimarisi, görsel dünya, motion fiziği, component sistemi,
 homepage, kritik iç sayfalar, navigation, footer, CTA, form durumları,
 responsive davranış ve final audit dahil olsun. Kart grid, generic ikon,
-ucuz gradient ve sıradan hero kalıbı istemiyorum.
+ucuz gradient ve sıradan hero kalıbı istemiyorum. Kullanıcı gerçek marka/app
+adı vermediyse uydurma startup ismi üretme; literal kategori/teklif adıyla
+ilerle veya isim sor. Her section entrance, iç motion, exit transition ve
+micro-interaction seviyesinde full animasyon alsın.
+```
+
+### React Landing: Üç Prompt Base
+
+```text
+Use $yabi. React landing işi için references/tr/react-landing-base.md dosyasını
+santim santim uygula: önce skill araştırması + React mimari planlama, sonra
+olağandışılık zorunlu üretim, sonra denetim ve inceltme. Henüz onay vermediysem
+yalnızca ilk promptta dur. Uydurma app adı yasak. Her section full animasyonlu
+olacak.
 ```
 
 ### Site Refactor
@@ -38,7 +51,19 @@ Use $yabi. Design and build a complete website, not only a landing page. Include
 route architecture, information architecture, visual world, motion physics,
 component system, homepage, key inner pages, navigation, footer, CTAs, form
 states, responsive behavior, and final audit. Avoid card grids, generic icons,
-cheap gradients, and predictable hero templates.
+cheap gradients, and predictable hero templates. Do not invent a fake app/brand
+name when the user has not provided one. Every section must have full animation:
+entrance, internal motion, exit transition, and micro-interaction.
+```
+
+### React Landing: Three-Prompt Base
+
+```text
+Use $yabi. For this React landing page, follow references/en/react-landing-base.md
+exactly: first skill research + React architecture planning, then unusualness-led
+implementation, then audit and refinement. If I have not approved the plan yet,
+stop after prompt one. Fake app names are forbidden. Every section must have
+full animation.
 ```
 
 ### Site Refactor
