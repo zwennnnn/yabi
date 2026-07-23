@@ -25,6 +25,8 @@ Her YABI işinde en az şunları oku:
 - `references/tr/site-systems.md` veya `references/en/site-systems.md`
 - `references/tr/visual-world.md` veya `references/en/visual-world.md`
 - `references/tr/audit-rubric.md` veya `references/en/audit-rubric.md`
+- React landing page, homepage veya section refactor işi varsa:
+  `references/tr/react-landing-base.md` veya `references/en/react-landing-base.md`
 
 Duruma göre ek oku:
 - Motion ağırsa: `references/*/motion-and-interaction.md`
@@ -32,6 +34,28 @@ Duruma göre ek oku:
 - Kullanıcı prompt/brief sistemi istiyorsa: `references/*/prompt-pack.md`
 
 ## Zorunlu Fazlar
+
+### Faz -1: Skill Araştırması ve React Mimari Planı
+
+React landing page, homepage, single-page campaign, hero/section redesign veya
+mevcut landing refactor görevlerinde koda geçmeden önce bu faz zorunludur.
+
+Projede `find-skills`/`findskills` skili varsa kullan. Yoksa `npx skills find`
+ile araştır. Üç kategori tara:
+- Creative / tasarım: kompozisyon, storytelling, sinematik sahne, motion
+  design, kinetic typography, editorial readability, deneysel layout.
+- Teknik / görsel yapısal: frontend mühendisliği, spacing/grid/breakpoint,
+  WCAG, performans, React + GSAP + ScrollTrigger cleanup.
+- Mimari / kod kalitesi: React component ayrıştırma, custom hook, dosya
+  organizasyonu, state management, isimlendirme.
+
+Her bulunan ilgili skill için adını, kategorisini ve işe yaradığı alanı özetle;
+projeye kur; sonra `SKILL.md`/`README` dosyalarını oku. Skill okumadan kod
+yazma.
+
+Bu fazın sonunda kullanıcıya React mimari planını özetle ve onay iste. Kullanıcı
+açıkça "planlama", "1. prompt" veya "henüz oluşturma" diyorsa burada dur.
+Kullanıcı baştan tam üretim istemişse, planı özetledikten sonra devam et.
 
 ### Faz 0: Kapsamı Kilitle
 
@@ -56,6 +80,9 @@ Koda geçmeden önce kısa ama somut plan çıkar:
   fiziği.
 - Teknik mimari: component sınırları, token sistemi, asset stratejisi, motion
   hook'ları, responsive davranış.
+- React landing mimarisi gerekiyorsa `references/*/react-landing-base.md`
+  dosyasındaki dosya yapısı, `/src/lib/gsap.js`, `/src/hooks/` motion hook'ları,
+  token sistemi ve state paylaşımı kararlarına birebir uy.
 
 Plan soyut sıfatlardan oluşamaz. Her karar "bu projede neden böyle" sorusuna
 cevap vermeli.
@@ -71,6 +98,10 @@ Siteyi gerçek ürün gibi inşa et:
 - Motion component içine dağılmaz; hook/util katmanında yaşar.
 - Görsel asset kullan; dekoratif blob, ucuz gradient ve kart grid refleksiyle
   işi kapatma.
+- React landing page inşa ediyorsan önceki mimari plana kesin sadık kal:
+  section component sınırlarını koru, motion'u custom hook'lara koy,
+  GSAP context cleanup'ı `ctx.revert()` ile yap, inline stil ve sabit hex
+  gömme.
 
 ### Faz 3: Kırma ve Sertleştirme
 
@@ -82,6 +113,10 @@ kapatılmadan bitirme.
 `yabi-ui-tester` kuruluyse veya kullanıcı doğrulama isterse onu çağır; raporu
 YABI audit rubric'e geri besle ve çıkan kritik sorunları düzelt.
 
+React landing page ve refactor işlerinde `references/*/react-landing-base.md`
+içindeki üç eksenli base prompt yapısını uygula: önce skill araştırması +
+mimari plan, sonra olağandışılık zorunlu üretim, sonra denetim ve inceltme.
+
 ## Asla İhlal Etme
 
 - Okunabilirlik tüm estetik kararların üstündedir.
@@ -92,6 +127,10 @@ YABI audit rubric'e geri besle ve çıkan kritik sorunları düzelt.
 - Masaüstü ana sahnedir, mobil sonradan sıkıştırılmış versiyon değildir.
 - Her tasarım kararının dünyada karşılığı vardır: ışık, malzeme, hareket,
   ton ve içerik aynı evrene ait olmalıdır.
+- React landing işlerinde base protokol pazarlık konusu değildir: skill
+  araştırması, React mimari planı, olağandışılık seçimi, sick transitions,
+  görsel tedarik, okunabilirlik denetimi ve refactor içerik koruması her
+  zaman uygulanır.
 
 ## Yardımcı Scriptler
 

@@ -1,8 +1,8 @@
-# yabi-skills
+# yabi
 
-[![skills.sh](https://img.shields.io/badge/skills.sh-yabi--skills-111111?style=for-the-badge)](https://skills.sh)
+[![skills.sh](https://skills.sh/b/zwennnnn/yabi)](https://skills.sh/zwennnnn/yabi)
 
-`yabi-skills`, sıradan AI web çıktısını kırmak için hazırlanmış iki parçalı
+`zwennnnn/yabi`, sıradan AI web çıktısını kırmak için hazırlanmış iki parçalı
 bir Codex skill reposudur.
 
 ## İçerik
@@ -17,19 +17,16 @@ bir Codex skill reposudur.
 
 ## Kurulum
 
-GitHub'a push ettikten sonra `OWNER` kısmını kendi GitHub kullanıcı adın veya
-organizasyonunla değiştir.
-
 Repo içindeki skill listesini görmek için:
 
 ```bash
-npx skills add OWNER/yabi-skills --list
+npx skills add zwennnnn/yabi --full-depth --list
 ```
 
 İki skili birlikte kurmak için:
 
 ```bash
-npx skills add OWNER/yabi-skills --skill yabi --skill yabi-ui-tester
+npx skills add zwennnnn/yabi --full-depth --skill yabi --skill yabi-ui-tester
 ```
 
 Yerel klasörden test etmek için:
